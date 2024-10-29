@@ -1,7 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
+.MuiAccordionSummary-expandIconWrapper.Mui-expanded{
+  transform: rotate(90deg);
+}
+.MuiPaper-root{
+  box-shadow: none;
+  border-radius: 10px;
+}
+.MuiList-root.MuiMenu-list{
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.MuiInputBase-root.MuiOutlinedInput-root{
+  border-radius: 10px;
+  border: #E9ECEF 1px;
+  /* height: 46px; */
+}
+.MuiInputBase-root.MuiOutlinedInput-root *, .MuiFormLabel-root.MuiInputLabel-root{
+  font-family: Urbanist;
+}
+/* .MuiFormLabel-root.MuiInputLabel-root{
+  transform: translateY(5px);
+} */
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -9,13 +34,37 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    
+  }
+}
+
+@media (min-width: 1024px) {
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    width: 12px;
+    border-radius: 30px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background: #d9d9d9;
+    border-radius: 10px;
+    width: 8px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #c3c3c3;
   }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Urbanist, sans-serif;
 }
