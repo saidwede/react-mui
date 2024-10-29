@@ -6,23 +6,23 @@
 
 
 .MuiAccordionSummary-expandIconWrapper.Mui-expanded{
-  transform: rotate(90deg);
+  transform: rotate(90deg) !important;
 }
 .MuiPaper-root{
-  box-shadow: none;
-  border-radius: 10px;
+  box-shadow: none !important;
+  border-radius: 10px !important;
 }
 .MuiList-root.MuiMenu-list{
-  padding-bottom: 0px;
-  padding-top: 0px;
+  padding-bottom: 0px !important;
+  padding-top: 0px !important;
 }
 .MuiInputBase-root.MuiOutlinedInput-root{
-  border-radius: 10px;
-  border: #E9ECEF 1px;
+  border-radius: 10px !important;
+  border: #E9ECEF 1px !important;
   /* height: 46px; */
 }
 .MuiInputBase-root.MuiOutlinedInput-root *, .MuiFormLabel-root.MuiInputLabel-root{
-  font-family: Urbanist;
+  font-family: Urbanist !important;
 }
 /* .MuiFormLabel-root.MuiInputLabel-root{
   transform: translateY(5px);
@@ -66,5 +66,5 @@
 }
 
 body {
-  font-family: Urbanist, sans-serif;
+  font-family: Urbanist, sans-serif !important;
 }

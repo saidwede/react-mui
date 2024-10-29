@@ -42,11 +42,11 @@ export default function MainPanel() {
     return (
         <div className="bg-white flex flex-col rounded-[16px] transition-all duration-500 border-border-primary lg:border-[1px] w-full">
             <div className="border-b-[1px] flex justify-between items-center border-border-primary py-[8px] px-[20px]">
-                    <IconButton className="lg:hidden" onClick={() => {setIsSideOpened(!isSideOpened)}}>
+                    <IconButton className="[&&]:lg:hidden" onClick={() => {setIsSideOpened(!isSideOpened)}}>
                         <HambergerMenu size={24} color="#64676C" />
                     </IconButton>
                 {isLoged && (
-                    <IconButton className="hidden lg:inline-block" onClick={() => {setIsMaximised(!isMaximised)}}>
+                    <IconButton className="[&&]:hidden [&&]:lg:inline-block" onClick={() => {setIsMaximised(!isMaximised)}}>
                         <Maximize3 size={24} color="#64676C" />
                     </IconButton>
                 )}

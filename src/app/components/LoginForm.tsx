@@ -48,9 +48,9 @@ export default function LoginForm(){
                     <Button
                         type='submit'
                         variant="outlined"
-                        className=" bg-primary rounded-[10px] h-[46px] w-full"
+                        className=" [&&]:bg-primary [&&]:rounded-[10px] [&&]:h-[46px] w-full"
                     >
-                        <span className='text-white normal-case text-[18px] font-[600]'>Sign in</span>
+                        <span className='text-white normal-case [&&]:text-[18px] [&&]:font-[600]'>Sign in</span>
                     </Button>
                 </form>
                 <div className='h-[76px] border-[1px] border-border-primary flex justify-between items-center px-4'>
@@ -72,15 +72,15 @@ export default function LoginForm(){
                         </div>
                     </div>
                     <div className='flex flex-col gap-[16px]'>
-                        <Button className='flex gap-[16px] h-[46px] w-full rounded-[12px] bg-primary bg-opacity-5'>
+                        <Button className='flex gap-[16px] [&&]:h-[46px] w-full [&&]:rounded-[12px] [&&]:bg-primary [&&]:bg-opacity-5'>
                             <Apple variant='Bold' color='#000000' size={28}/>
                             <span className='text-[16px] font-[300] text-dark-primary normal-case'>Sign in with Apple ID</span>
                         </Button>
-                        <Button className='flex gap-[16px] h-[46px] w-full rounded-[12px] bg-primary bg-opacity-5'>
+                        <Button className='flex gap-[16px] [&&]:h-[46px] w-full [&&]:rounded-[12px] [&&]:bg-primary [&&]:bg-opacity-5'>
                             <img src="/img/google.svg" alt="" />
                             <span className='text-[16px] font-[300] text-dark-primary normal-case'>Sign in with Google</span>
                         </Button>
-                        <Button className='flex gap-[16px] h-[46px] w-full rounded-[12px] bg-primary bg-opacity-5'>
+                        <Button className='flex gap-[16px] [&&]:h-[46px] w-full [&&]:rounded-[12px] [&&]:bg-primary [&&]:bg-opacity-5'>
                         <img src="/img/facebook.svg" alt="" />
                             <span className='text-[16px] font-[300] text-dark-primary normal-case'>Sign in with Facebook</span>
                         </Button>

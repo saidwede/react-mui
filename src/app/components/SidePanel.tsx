@@ -18,7 +18,7 @@ export default function SidePanel() {
       <div>
         <Button
           variant="outlined"
-          className="border-primary gap-[8px] bg-primary bg-opacity-10 rounded-[10px] h-[46px] w-full"
+          className="[&&]:border-primary gap-[8px] [&&]:bg-primary [&&]:bg-opacity-10 [&&]:rounded-[10px] [&&]:h-[46px] w-full"
         >
           <span>New Chat</span>
           <Add color="#007BFF" size="24" />

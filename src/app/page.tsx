@@ -21,9 +21,11 @@ export default function Home() {
         ${isLoged ? 'lg:w-[310px] w-screen' : 'lg:w-[700px] w-screen'} 
         fixed lg:static top-0 left-0 z-10 transition-all duration-300 ${isSideOpened ? 'translate-x-[0px]' : 'translate-x-[-100vw]'} lg:translate-x-[0px]
         h-full bg-white flex justify-center`}>
-          <IconButton className="lg:hidden absolute top-[10px] right-[10px]" onClick={() => {setIsSideOpened(!isSideOpened)}}>
-            <Add className='-rotate-45' size={24} color="#64676C" />
-          </IconButton>
+          <div className="lg:hidden absolute top-[10px] right-[10px]" onClick={() => {setIsSideOpened(!isSideOpened)}}>
+            <IconButton>
+              <Add className='-rotate-45' size={24} color="#64676C" />
+            </IconButton>
+          </div>
           {isLoged && (
             <SidePanel />
           )}
