@@ -76,8 +76,8 @@ export default function SidePanel() {
                         <div className="text-[10px] font-[300] text-dark-secondary">20/20 left credit</div>
                     </div>
                 </div>
-                <Button variant="text" color="inherit" className="bg-tertiary h-[26px]">
-                    <span className="text-[12px] capitalize text-white">Upgrade</span>
+                <Button variant="text" color="inherit" className="[&&]:bg-tertiary h-[26px]">
+                    <span className="[&&]:text-[12px] [&&]:capitalize [&&]:text-white">Upgrade</span>
                 </Button>
             </div>
         </div>
